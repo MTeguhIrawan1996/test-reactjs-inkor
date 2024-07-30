@@ -1,11 +1,5 @@
 {
-  "[typescript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-  },
   "css.validate": false,
-  "deno.enablePaths": ["supabase/functions"],
-  "deno.lint": true,
-  "deno.unstable": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
