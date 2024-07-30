@@ -1,4 +1,4 @@
-# Next.js + Mantine UI + TypeScript Starter and Boilerplate
+# React.js + PandaCss + TypeScript Starter and Boilerplate
 
 <div align="center">
   <h2>🔋 react-ts-pandacss-starter</h2>
