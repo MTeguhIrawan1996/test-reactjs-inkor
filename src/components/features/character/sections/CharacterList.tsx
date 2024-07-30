@@ -4,7 +4,11 @@ import { useReadAllCharacters } from '@/services/characters/useReadAllCharacters
 import { grid } from '@/styled-system/patterns';
 
 export const CharacterList = () => {
-  const { data } = useReadAllCharacters();
+  const { data, error } = useReadAllCharacters();
+
+  if (error) {
+    return <div data-testid='error'>Error: {error.message}</div>;
+  }
 
   return (
     <div className={grid({ columns: 3, gap: 6 })}>

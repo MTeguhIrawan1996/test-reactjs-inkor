@@ -1,13 +1,17 @@
 import { cleanup, render } from '@testing-library/react';
 import { afterEach } from 'vitest';
 
+import { ProviderWrapper } from '@/components/layouts/wrapper/ProviderWrapper';
+
 afterEach(() => {
   cleanup();
 });
 
 function customRender(ui: React.ReactNode, options = {}) {
   return render(<>{ui}</>, {
-    wrapper: ({ children }: { children: React.ReactNode }) => children,
+    wrapper: ({ children }: { children: React.ReactNode }) => (
+      <ProviderWrapper>{children}</ProviderWrapper>
+    ),
     ...options,
   });
 }

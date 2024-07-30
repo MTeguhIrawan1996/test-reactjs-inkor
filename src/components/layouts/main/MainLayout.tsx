@@ -17,6 +17,7 @@ export const MainLayout: React.FunctionComponent<IMainLayoutProps> = ({
       })}
     >
       <nav
+        role='nav'
         className={css({
           display: 'flex',
           justifyContent: 'space-between',

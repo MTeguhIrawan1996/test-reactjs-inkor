@@ -23,6 +23,7 @@ export const CharacterCard = ({
   return (
     <Stack>
       <figure
+        data-testid='character-image'
         data-loading={isLoading}
         className={css({
           w: 'full',
@@ -34,7 +35,7 @@ export const CharacterCard = ({
       >
         <LazyLoadImage
           data-loading={isLoading}
-          alt='fo'
+          alt={imageUrl ?? ''}
           src={imageUrl ?? ''}
           onLoad={() => setLoading(undefined)}
           className={css({
